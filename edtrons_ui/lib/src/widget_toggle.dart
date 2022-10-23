@@ -1,0 +1,1 @@
+enum WidgetToggle { active, inactive }

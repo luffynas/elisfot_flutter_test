@@ -1,0 +1,135 @@
+name: elisoft_flutter_test
+version: 1.0.0+1
+publish_to: none
+description: A Very Good Project created by Very Good CLI.
+environment: 
+  sdk: '>=2.18.1 <3.0.0'
+  
+dependencies: 
+  app_links: ^3.2.0
+  app_settings: ^4.1.6
+  auto_route: ^5.0.1
+  bloc: ^8.0.3
+  camera: ^0.10.0+1
+  collection: ^1.16.0
+  connectivity_plus: ^2.3.3
+  device_preview: ^1.1.0
+  dots_indicator: ^2.1.0
+  equatable: ^2.0.5
+  file_picker: ^5.2.0+1
+  firebase_analytics: ^9.1.8
+  firebase_auth: ^3.3.18
+  firebase_core: ^1.17.0
+  firebase_crashlytics: ^2.8.0
+  firebase_messaging: ^13.0.3
+  flutter_bloc: ^8.0.1
+  flutter_dotenv: ^5.0.2
+  flutter_mentions: ^2.0.1
+  formz: ^0.4.1
+  get_it: ^7.2.0
+  get_storage: ^2.0.3
+  google_fonts: ^3.0.1
+  http: ^0.13.3
+  image_picker: ^0.8.5+3
+  intl: ^0.17.0
+  json_annotation: ^4.5.0
+  overlay_support: ^2.0.0
+  package_info_plus: ^2.0.0
+  path_provider: ^2.0.11
+  progressive_image: ^2.0.0
+  pull_to_refresh_flutter3: ^2.0.1
+  rxdart: ^0.27.3
+  shimmer: ^2.0.0
+  stream_transform: ^2.0.0
+  timeago: ^3.2.2
+  url_launcher: ^6.1.6
+  webview_flutter: ^3.0.4
+  wechat_assets_picker: ^8.1.1
+  edtrons_ui: 
+    path: edtrons_ui
+  flutter: 
+    sdk: flutter
+  flutter_localizations: 
+    sdk: flutter
+  path: ^1.8.2
+
+dev_dependencies: 
+  auto_route_generator: ^5.0.2
+  bloc_test: ^9.0.3
+  build_runner: ^2.1.11
+  flutter_flavorizr: ^2.1.3
+  flutter_test: 
+    sdk: flutter
+  json_serializable: ^6.2.0
+  mocktail: ^0.3.0
+  pubspec_dependency_sorter: ^0.0.1
+  very_good_analysis: ^3.0.1
+  
+flutter: 
+  assets: 
+    - .env
+    - assets/images/
+    - assets/images/walkthrough/
+    - assets/images/menu/
+    - assets/images/placeholder/
+    - assets/images/error/
+    - assets/images/empty/
+  fonts: 
+    - 
+      family: AppIcon
+      fonts: 
+        - 
+          asset: assets/fonts/app-icon.ttf
+  uses-material-design: true
+  generate: true
+flavorizr: 
+  app: 
+    android: 
+      flavorDimensions: flavor-type
+    ios: null
+  flavors: 
+    development: 
+      app: 
+        name: '[DEV] ELISOFT'
+      android: 
+        applicationId: com.elisoft_flutter_test.app.dev
+        resValues: 
+          app_name: 
+            type: string
+            value: ELISOFT DEV
+        firebase: 
+          config: .firebase/development/google-services.json
+      ios: 
+        bundleId: com.elisoft_flutter_test.app.dev
+        firebase: 
+          config: .firebase/development/GoogleService-Info.plist
+    staging: 
+      app: 
+        name: '[STG] ELISOFT'
+      android: 
+        applicationId: com.elisoft_flutter_test.app.staging
+        resValues: 
+          app_name: 
+            type: string
+            value: ELISOFT STAGING
+        firebase: 
+          config: .firebase/staging/google-services.json
+      ios: 
+        bundleId: com.elisoft_flutter_test.app.staging
+        firebase: 
+          config: .firebase/staging/GoogleService-Info.plist
+    production: 
+      app: 
+        name: ELISOFT
+      android: 
+        applicationId: com.elisoft_flutter_test.app
+        resValues: 
+          app_name: 
+            type: string
+            value: ELISOFT
+        firebase: 
+          config: .firebase/production/google-services.json
+      ios: 
+        bundleId: com.elisoft_flutter_test.app
+        firebase: 
+          config: .firebase/production/GoogleService-Info.plist

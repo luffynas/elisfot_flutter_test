@@ -1,0 +1,25 @@
+{
+    "__className": "article", // <- The base class name of the object.
+    "__path": "/lib/models/article", // <- override default path with a new one by adding '__path' key.
+    "uuid": "dff3a550-15b3-3792-9f53-b9a2e9f07854",
+    "title": "Eum atque nemo accusamus fuga vero.",
+    "content": "Rem maxime ad ad molestias sed nemo. Sapiente enim quia molestiae inventore ipsa sint eum. Praesentium possimus aut ut in. Aut magnam sequi et maxime repellat.",
+    "image": "https://via.placeholder.com/800x600.png/0022ff?text=rerum",
+    "views": 23785,
+    "created": {
+        "date": "2022-10-13 10:42:13.000000",
+        "timezone_type": 3,
+        "timezone": "UTC"
+    },
+    "user": {
+        "name": "Lexus Hackett",
+        "email": "stoltenberg.ima@yahoo.com",
+        "phone_number": "+17179722246",
+        "created": {
+            "date": "2022-10-18 01:31:25.000000",
+            "timezone_type": 3,
+            "timezone": "UTC"
+        },
+        "uuid": "4ffcba1c-8a6c-3e8e-95db-bab34bff22e8"
+    }
+}
