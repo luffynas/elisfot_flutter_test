@@ -44,7 +44,7 @@ class TextUtils {
 
   bool validateEmail(String value) {
     final regExp = RegExp(
-      r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?)*$",
+      r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$',
     );
     return regExp.hasMatch(value);
   }

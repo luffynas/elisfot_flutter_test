@@ -119,6 +119,9 @@ class AuthSignPageState extends State<AuthSignPage> {
                       FocusScope.of(context).requestFocus(focus);
                       _handlePressLogin();
                     },
+                    onChanged: (value) {
+                      setState(() {});
+                    },
                   ),
                   const SizedBox(height: 16),
                   EdtronsTextForm(
